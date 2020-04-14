@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {View} from 'react-native';
 import Todo from './Todo';
 
@@ -14,7 +14,7 @@ const TodoList = ({todos, deleteTodo, toggleComplete, type}) => {
         return todos.filter(t => !t.complete);
     }
   };
-//   alert(type);
+  //   alert(type);
   todos = getVisibleTodos(todos, type);
   todos = todos.map((todo, i) => {
     return (
